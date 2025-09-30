@@ -1,0 +1,35 @@
+﻿@page
+@model Frontend.Pages.Patients.CreateModel
+@{
+    ViewData["Title"] = "Ajouter un patient";
+}
+
+<h2>Ajouter un patient</h2>
+
+<form method="post">
+    <div>
+        <label>Prénom</label>
+        <input asp-for="Patient.FirstName" />
+    </div>
+    <div>
+        <label>Nom</label>
+        <input asp-for="Patient.LastName" />
+    </div>
+    <div>
+        <label>Date de naissance</label>
+        <input asp-for="Patient.DateOfBirth" type="date" />
+    </div>
+    <div>
+        <label>Sexe</label>
+        <input asp-for="Patient.Gender" />
+    </div>
+    <div>
+        <label>Adresse</label>
+        <input asp-for="Patient.Address" />
+    </div>
+    <div>
+        <label>Téléphone</label>
+        <input asp-for="Patient.PhoneNumber" />
+    </div>
+    <button type="submit">Créer</button>
+</form>

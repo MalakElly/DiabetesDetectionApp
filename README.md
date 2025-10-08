@@ -20,8 +20,8 @@ Fournir une interface web simple (Razor Pages) consommant tous les services via 
 
 Le tout conteneurisé avec Docker
 
-=> Architecture globale
--Services principaux
+=> Architecture globale et Services principaux :
+
 FrontEnd	Interface utilisateur (Razor Pages) connectée à la Gateway	
 API Gateway	Point d’entrée unique de toutes les requêtes	
 PatientService.API	Gestion CRUD des patients	

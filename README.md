@@ -1,4 +1,4 @@
-Diabetes Detection App — Architecture Microservices (.NET 8)
+👩‍⚕️Diabetes Detection App — Architecture Microservices (.NET 8)
 
  Projet 10 – OpenClassrooms
  Réalisé par Malak El Oualy, Développeuse .NET chez IB Cegos

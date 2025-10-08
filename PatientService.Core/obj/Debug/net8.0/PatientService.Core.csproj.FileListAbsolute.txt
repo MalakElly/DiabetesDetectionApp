@@ -1,0 +1,23 @@
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\bin\Debug\net8.0\PatientService.Core.deps.json
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\bin\Debug\net8.0\PatientService.Core.dll
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\bin\Debug\net8.0\PatientService.Core.pdb
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\PatientService.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\PatientService.Core.AssemblyInfoInputs.cache
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\PatientService.Core.AssemblyInfo.cs
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\PatientService.Core.csproj.CoreCompileInputs.cache
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\PatientService.Core.dll
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\refint\PatientService.Core.dll
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\PatientService.Core.pdb
+C:\Users\Malak.El-Oualy\OneDrive - ib Cegos\Documents\PatientService.Core\obj\Debug\net8.0\ref\PatientService.Core.dll
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\bin\Debug\net8.0\PatientService.Core.deps.json
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\bin\Debug\net8.0\PatientService.Core.dll
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\bin\Debug\net8.0\PatientService.Core.pdb
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\PatientService.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\PatientService.Core.AssemblyInfoInputs.cache
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\PatientService.Core.AssemblyInfo.cs
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\PatientService.Core.csproj.CoreCompileInputs.cache
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\PatientService.Core.sourcelink.json
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\PatientService.Core.dll
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\refint\PatientService.Core.dll
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\PatientService.Core.pdb
+C:\Users\Malak.El-Oualy\Documents\DiabetesDetectionApp\PatientService.Core\obj\Debug\net8.0\ref\PatientService.Core.dll

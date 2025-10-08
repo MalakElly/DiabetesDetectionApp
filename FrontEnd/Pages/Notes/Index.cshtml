@@ -1,0 +1,90 @@
+﻿@page "{patientId}"
+@model FrontEnd.Pages.Notes.IndexModel
+@{
+    ViewData["Title"] = "Notes du patient";
+}
+
+<div class="container mt-5" style="max-width: 700px;">
+    <div class="card shadow-sm">
+        <div class="card-header bg-info text-white text-center">
+            <h3 class="mb-0">Notes du patient</h3>
+        </div>
+        <div class="card-body">
+
+            @if (Model.Notes.Any())
+            {
+                <ul class="list-group mb-4">
+                    @foreach (var note in Model.Notes)
+                    {
+                        <li class="list-group-item">
+                            <div class="d-flex justify-content-between align-items-start">
+                                <div style="flex:1;">
+                                    @if (Model.NoteBeingEdited == note.Id)
+                                    {
+                                        <!-- Champ d'édition -->
+                                        <form method="post" asp-page-handler="Update"
+                                              asp-route-id="@note.Id"
+                                              asp-route-patientId="@Model.PatientId">
+                                            <textarea name="UpdatedContent" class="form-control mb-2" rows="3">@note.Contenu</textarea>
+                                            <button type="submit" class="btn btn-sm btn-success"> Enregistrer</button>
+                                            <button type="submit" class="btn btn-sm btn-secondary" formaction="?handler=CancelEdit"> Annuler</button>
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <p class="mb-1">@note.Contenu</p>
+                                        <small class="text-muted">
+                                            Ajoutée le @note.Date.ToLocalTime().ToString("dd/MM/yyyy HH:mm")
+                                        </small>
+                                    }
+                                </div>
+
+                                @if (Model.NoteBeingEdited != note.Id)
+                                {
+                                    <div class="d-flex">
+                                        <form method="post" asp-page-handler="Edit"
+                                              asp-route-id="@note.Id"
+                                              asp-route-patientId="@Model.PatientId" class="me-2">
+                                            <button type="submit" class="btn btn-sm btn-outline-warning">
+                                                ✏️
+                                            </button>
+                                        </form>
+                                        <form method="post" asp-page-handler="Delete"
+                                              asp-route-id="@note.Id"
+                                              asp-route-patientId="@Model.PatientId">
+                                            <button type="submit" class="btn btn-sm btn-outline-danger">
+                                                🗑
+                                            </button>
+                                        </form>
+                                    </div>
+                                }
+                            </div>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-center text-muted">Aucune note trouvée pour ce patient.</p>
+            }
+
+            <hr />
+
+            <h5 class="mt-4">Ajouter une nouvelle note</h5>
+            <form method="post" asp-page-handler="Create">
+                <div class="mb-3">
+                    <textarea asp-for="NewNoteContent" class="form-control" rows="4"
+                              placeholder="Saisir la note du médecin..." required></textarea>
+                    <span asp-validation-for="NewNoteContent" class="text-danger"></span>
+                </div>
+                <input type="hidden" asp-for="PatientId" />
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success px-4">
+                        <i class="bi bi-plus-circle"></i> Ajouter
+                    </button>
+                    <a asp-page="/Patients/Index" class="btn btn-secondary ms-2">Retour</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,191 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "PatientService.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Patients": {
+      "get": {
+        "tags": [
+          "Patients"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Patients"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Patient"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Patient"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Patient"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Patients/{id}": {
+      "get": {
+        "tags": [
+          "Patients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Patients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Patient"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Patient"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Patient"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Patients"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "GenderEntityType": {
+        "enum": [
+          0,
+          1,
+          2
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "Patient": {
+        "required": [
+          "dateOfBirth",
+          "firstName",
+          "gender",
+          "lastName"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "lastName": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string"
+          },
+          "dateOfBirth": {
+            "type": "string",
+            "format": "date"
+          },
+          "gender": {
+            "$ref": "#/components/schemas/GenderEntityType"
+          },
+          "address": {
+            "maxLength": 250,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "phoneNumber": {
+            "type": "string",
+            "format": "tel",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

@@ -1,37 +1,74 @@
 ﻿@page "{id:int}"
 @model FrontEnd.Pages.Patients.EditModel
+
 @{
-    ViewData["Title"] = "Modifier Patient";
+    ViewData["Title"] = "Modifier un patient";
 }
 
-<h2>Modifier Patient</h2>
+<div class="container mt-5" style="max-width: 600px;">
+    <div class="card shadow-sm">
+        <div class="card-header bg-warning text-dark text-center">
+            <h3 class="mb-0">Modifier un patient</h3>
+        </div>
 
-<form method="post">
-    <input type="hidden" asp-for="Patient.Id" />
+        <div class="card-body">
+            <form method="post" class="needs-validation">
+                <input type="hidden" asp-for="Patient.Id" />
 
-    <div>
-        <label>Prénom</label>
-        <input asp-for="Patient.FirstName" />
+                <div class="mb-3">
+                    <label asp-for="Patient.FirstName" class="form-label fw-bold">Prénom</label>
+                    <input asp-for="Patient.FirstName" class="form-control" placeholder="Ex: Marie" required />
+                    <span asp-validation-for="Patient.FirstName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Patient.LastName" class="form-label fw-bold">Nom</label>
+                    <input asp-for="Patient.LastName" class="form-control" placeholder="Ex: Dupont" required />
+                    <span asp-validation-for="Patient.LastName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Patient.DateOfBirth" class="form-label fw-bold">Date de naissance</label>
+                    <input asp-for="Patient.DateOfBirth" type="date" class="form-control" required />
+                    <span asp-validation-for="Patient.DateOfBirth" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Patient.Gender" class="form-label fw-bold">Genre</label>
+                    <select asp-for="Patient.Gender" class="form-select" required>
+                        <option value="">-- Sélectionner --</option>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                        <option value="NonSpecifie">Non spécifié</option>
+                    </select>
+                    <span asp-validation-for="Patient.Gender" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Patient.Address" class="form-label fw-bold">Adresse</label>
+                    <input asp-for="Patient.Address" class="form-control" placeholder="Ex: 12 rue de Paris, Lyon" />
+                    <span asp-validation-for="Patient.Address" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Patient.PhoneNumber" class="form-label fw-bold">Téléphone</label>
+                    <input asp-for="Patient.PhoneNumber" class="form-control" placeholder="Ex: +33 6 12 34 56 78" />
+                    <span asp-validation-for="Patient.PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-warning text-dark px-4">
+                        <i class="bi bi-save"></i> Enregistrer
+                    </button>
+                    <a asp-page="/Patients/Index" class="btn btn-secondary ms-2">
+                        Annuler
+                    </a>
+                </div>
+            </form>
+        </div>
     </div>
-    <div>
-        <label>Nom</label>
-        <input asp-for="Patient.LastName" />
-    </div>
-    <div>
-        <label>Date de naissance</label>
-        <input asp-for="Patient.DateOfBirth" type="date" />
-    </div>
-    <div>
-        <label>Sexe</label>
-        <input asp-for="Patient.Gender" />
-    </div>
-    <div>
-        <label>Adresse</label>
-        <input asp-for="Patient.Address" />
-    </div>
-    <div>
-        <label>Téléphone</label>
-        <input asp-for="Patient.PhoneNumber" />
-    </div>
-    <button type="submit">Enregistrer</button>
-</form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

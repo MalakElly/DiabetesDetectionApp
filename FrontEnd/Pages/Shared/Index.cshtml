@@ -1,0 +1,20 @@
+﻿@page
+@model FrontEnd.Pages.Shared.IndexModel
+@{
+    ViewData["Title"] = "Accueil";
+}
+
+<div class="container mt-5">
+    <div class="text-center">
+        <h1 class="display-4 fw-bold">Application de Détection du Diabète</h1>
+        <p class="lead text-muted">
+            Bienvenue dans votre outil médical intelligent pour la gestion des patients et le suivi des risques de diabète.
+        </p>
+        <hr class="my-4" />
+
+        <div class="mt-4">
+            <a asp-page="/Account/Login" class="btn btn-primary btn-lg me-3">Se connecter</a>
+            <a asp-page="/Account/Register" class="btn btn-outline-success btn-lg">Créer un compte</a>
+        </div>
+    </div>
+</div>

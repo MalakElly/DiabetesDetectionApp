@@ -1,0 +1,87 @@
+[
+  {
+    "ContainingType": "NotesService.API.Controllers.NotesController",
+    "Method": "Create",
+    "RelativePath": "api/Notes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "note",
+        "Type": "NotesService.API.Models.Note",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesService.API.Controllers.NotesController",
+    "Method": "GetById",
+    "RelativePath": "api/Notes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesService.API.Controllers.NotesController",
+    "Method": "Update",
+    "RelativePath": "api/Notes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedNote",
+        "Type": "NotesService.API.Models.Note",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesService.API.Controllers.NotesController",
+    "Method": "Delete",
+    "RelativePath": "api/Notes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "NotesService.API.Controllers.NotesController",
+    "Method": "GetNotesForPatient",
+    "RelativePath": "api/Notes/patient/{patientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

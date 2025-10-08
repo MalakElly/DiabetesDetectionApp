@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "PGIkArSiKf760IQYVAiIzkJ52xDSlhNYzMjyGlKNWUE=",
+  "Source": "RiskService.API",
+  "BasePath": "_content/RiskService.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

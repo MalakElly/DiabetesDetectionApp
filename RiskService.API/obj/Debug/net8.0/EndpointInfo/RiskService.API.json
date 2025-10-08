@@ -1,0 +1,32 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RiskService.API",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Risk/{patientId}": {
+      "get": {
+        "tags": [
+          "Risk"
+        ],
+        "parameters": [
+          {
+            "name": "patientId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": { }
+}

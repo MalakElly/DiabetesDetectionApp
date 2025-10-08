@@ -1,0 +1,22 @@
+﻿
+@page
+@model FrontEnd.Pages.Home.IndexModel
+@{
+    ViewData["Title"] = "Accueil";
+}
+
+<div class="container mt-5">
+    <h1>Bienvenue @User.Identity.Name 👩‍⚕️</h1>
+    <p class="lead">Choisissez une action :</p>
+    <div class="row mt-4">
+        <div class="col-md-4">
+            <a class="btn btn-primary w-100" asp-page="/Patients/Index">👩‍⚕️ Gérer les patients</a>
+        </div>
+      
+        <div class="col-md-4">
+            <form method="post" asp-page="/Account/Logout">
+                <button type="submit" class="btn btn-danger w-100">🚪 Déconnexion</button>
+            </form>
+        </div>
+    </div>
+</div>

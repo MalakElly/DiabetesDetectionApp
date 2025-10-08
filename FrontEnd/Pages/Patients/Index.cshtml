@@ -1,38 +1,71 @@
 ﻿@page
 @model FrontEnd.Pages.Patients.IndexModel
+
 @{
-    ViewData["Title"] = "Patients";
+    ViewData["Title"] = "Liste des patients";
 }
 
-<h2>Liste des Patients</h2>
+<div class="container mt-5">
+    <h2 class="mb-4">Liste des Patients</h2>
+    <a class="btn btn-primary mb-3" asp-page="/Patients/Create">➕ Ajouter un patient</a>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Prénom</th>
-            <th>Nom</th>
-            <th>Date de naissance</th>
-            <th>Sexe</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var patient in Model.Patients)
-        {
+    <table class="table table-bordered align-middle text-center">
+      
+        <thead class="table-light">
             <tr>
-                <td>@patient.FirstName</td>
-                <td>@patient.LastName</td>
-                <td>@patient.DateOfBirth.ToShortDateString()</td>
-                <td>@patient.Gender</td>
-                <td>
-                    <a asp-page="Edit" asp-route-id="@patient.Id">Modifier</a> |
-                    <form method="post" asp-page-handler="Delete" asp-route-id="@patient.Id" style="display:inline;">
-                        <button type="submit">Supprimer</button>
-                    </form>
-                </td>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Âge</th>
+                <th>Risque</th>
+                <th>Sexe</th>
+                <th>Actions</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @foreach (var p in Model.Patients)
+            {
+                <tr>
+                    <td>@p.LastName</td>
+                    <td>@p.FirstName</td>
+                    <td>@p.Age ans</td>
+                    <td>
+                        @if (p.Risque == "EarlyOnset")
+                        {
+                            <span class="badge bg-danger">Early Onset</span>
+                        }
+                        else if (p.Risque == "InDanger")
+                        {
+                            <span class="badge bg-warning text-dark">In Danger</span>
+                        }
+                        else if (p.Risque == "Borderline")
+                        {
+                            <span class="badge bg-success">Borderline</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-secondary">None</span>
+                        }
+                    </td>
+                    <td>@p.Gender</td>
+                    <td>
+                        <a class="btn btn-outline-success btn-sm"
+                           asp-page="/Notes/Index"
+                           asp-route-patientId="@p.Id">
+                            📝 Notes
+                        </a>
+                        <a class="btn btn-info btn-sm"
+                           asp-page="/Patients/Details"
+                           asp-route-id="@p.Id">🔍 Détails</a>
+                        <a class="btn btn-warning btn-sm"
+                           asp-page="/Patients/Edit"
+                           asp-route-id="@p.Id">✏️ Modifier</a>
+                        <a class="btn btn-danger btn-sm"
+                           asp-page="/Patients/Delete"
+                           asp-route-id="@p.Id">🗑 Supprimer</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
 
-<a asp-page="Create">Ajouter un patient</a>
+    </table>
+</div>

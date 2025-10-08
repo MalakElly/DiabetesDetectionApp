@@ -1,0 +1,37 @@
+﻿@page "{patientId:int}"
+@model FrontEnd.Pages.Notes.CreateModel
+@{
+    ViewData["Title"] = "Ajouter une note";
+}
+
+<div class="container mt-5" style="max-width: 700px;">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white text-center">
+            <h3 class="mb-0">Ajouter une note médicale</h3>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div class="mb-3">
+                    <label asp-for="Content" class="form-label fw-bold">Note médicale</label>
+                    <textarea asp-for="Content" class="form-control" rows="6" placeholder="Saisir la note du médecin..." required></textarea>
+                    <span asp-validation-for="Content" class="text-danger"></span>
+                </div>
+
+                <input type="hidden" asp-for="PatientId" />
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success px-4">
+                        <i class="bi bi-plus-circle"></i> Enregistrer
+                    </button>
+                    <a asp-page="/Notes/Index" asp-route-patientId="@Model.PatientId" class="btn btn-secondary ms-2">
+                        Annuler
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

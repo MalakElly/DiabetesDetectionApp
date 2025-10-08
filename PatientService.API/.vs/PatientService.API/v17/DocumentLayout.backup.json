@@ -1,0 +1,243 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Malak.El-Oualy\\Documents\\DiabetesDetectionApp\\PatientService.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C013014E-5B2A-4718-B7D0-751F5E104D4A}|PatientService.API.csproj|c:\\users\\malak.el-oualy\\documents\\diabetesdetectionapp\\patientservice.api\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C013014E-5B2A-4718-B7D0-751F5E104D4A}|PatientService.API.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112427_Initial-Create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C013014E-5B2A-4718-B7D0-751F5E104D4A}|PatientService.API.csproj|c:\\users\\malak.el-oualy\\documents\\diabetesdetectionapp\\patientservice.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C013014E-5B2A-4718-B7D0-751F5E104D4A}|PatientService.API.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112328_Initial-Create1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111726_Initial-Create3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112052_Initial-Create.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111502_Initial-Create2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C013014E-5B2A-4718-B7D0-751F5E104D4A}|PatientService.API.csproj|c:\\users\\malak.el-oualy\\documents\\diabetesdetectionapp\\patientservice.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C013014E-5B2A-4718-B7D0-751F5E104D4A}|PatientService.API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Entities\\Patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Repositories\\PatientRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Interfaces\\IPatientRepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Data\\PatientDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\PatientService.Infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\Documents\\DiabetesDetectionApp\\PatientService.API\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\Documents\\DiabetesDetectionApp\\PatientService.API\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAB4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-30T11:14:03.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Entities\\Patient.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Entities\\Patient.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Entities\\Patient.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Entities\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:15:59.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\Documents\\DiabetesDetectionApp\\PatientService.API\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\Documents\\DiabetesDetectionApp\\PatientService.API\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Controllers\\PatientController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwA0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:22:23.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Repositories\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Repositories\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Repositories\\PatientRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Repositories\\PatientRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:09:46.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250930112427_Initial-Create.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112427_Initial-Create.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112427_Initial-Create.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112427_Initial-Create.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112427_Initial-Create.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:24:27.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Interfaces\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Interfaces\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Interfaces\\IPatientRepository.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Core\\Interfaces\\IPatientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:15:06.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20250930111726_Initial-Create3.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111726_Initial-Create3.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111726_Initial-Create3.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111726_Initial-Create3.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111726_Initial-Create3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:17:26.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20250930112328_Initial-Create1.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112328_Initial-Create1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112328_Initial-Create1.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112328_Initial-Create1.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112328_Initial-Create1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:23:28.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20250930112052_Initial-Create.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112052_Initial-Create.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112052_Initial-Create.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112052_Initial-Create.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930112052_Initial-Create.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:20:52.96Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PatientDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Data\\PatientDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Data\\PatientDbContext.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Data\\PatientDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Data\\PatientDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T10:11:14.862Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20250930111502_Initial-Create2.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111502_Initial-Create2.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111502_Initial-Create2.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111502_Initial-Create2.cs",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\Migrations\\20250930111502_Initial-Create2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T11:15:02.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PatientService.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\PatientService.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\PatientService.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\PatientService.Infrastructure.csproj",
+              "RelativeToolTip": "..\\..\\..\\OneDrive - ib Cegos\\Documents\\PatientService.Infrastructure\\PatientService.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-30T10:35:16.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Malak.El-Oualy\\Documents\\DiabetesDetectionApp\\PatientService.API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Malak.El-Oualy\\Documents\\DiabetesDetectionApp\\PatientService.API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:52:05.72Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

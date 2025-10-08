@@ -10,10 +10,47 @@
         }
       ],
       "UpstreamPathTemplate": "/patients",
+      "UpstreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/patients/{id}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7180
+        }
+      ],
+      "UpstreamPathTemplate": "/patients/{id}",
+      "UpstreamHttpMethod": [ "GET", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/notes/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5199
+        }
+      ],
+      "UpstreamPathTemplate": "/notes/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/risk/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5029
+        }
+      ],
+      "UpstreamPathTemplate": "/risk/{everything}",
+      "UpstreamHttpMethod": [ "GET" ]
     }
   ],
   "GlobalConfiguration": {
     "BaseUrl": "https://localhost:7162"
   }
 }
+//Transit du token 

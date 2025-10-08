@@ -1,0 +1,23 @@
+﻿@page
+@model FrontEnd.Pages.Account.RegisterModel
+@{
+    ViewData["Title"] = "S'inscrire";
+}
+
+<div class="container mt-5" style="max-width: 500px;">
+    <h2 class="mb-4 text-center">Créer un compte médecin</h2>
+    <form method="post" class="card p-4 shadow-sm">
+        <div class="mb-3">
+            <label asp-for="Input.Email" class="form-label">Adresse email</label>
+            <input asp-for="Input.Email" class="form-control" placeholder="ex: medecin@test.com" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Input.Password" class="form-label">Mot de passe</label>
+            <input asp-for="Input.Password" type="password" class="form-control" placeholder="Mot de passe sécurisé" />
+        </div>
+        <button type="submit" class="btn btn-success w-100">Créer un compte</button>
+    </form>
+    <div class="text-center mt-3">
+        <p>Déjà inscrit ? <a asp-page="/Account/Login">Connectez-vous ici</a></p>
+    </div>
+</div>

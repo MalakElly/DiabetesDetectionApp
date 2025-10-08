@@ -1,22 +1,21 @@
-﻿using FrontEnd.Models;
-using FrontEnd.Services;
-using FrontEnd.Models;
+﻿using FrontEnd.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using PatientService.Core.Entities; 
 
-namespace Frontend.Pages.Patients
+namespace FrontEnd.Pages.Patients
 {
     public class CreateModel : PageModel
     {
-        private readonly PatientService _service;
+        private readonly FrontEnd.Services.PatientService _service;
 
-        public CreateModel(PatientService service)
+        public CreateModel(FrontEnd.Services.PatientService service)
         {
             _service = service;
         }
 
         [BindProperty]
-        public PatientDto Patient { get; set; }
+        public Patient Patient { get; set; }
 
         public void OnGet() { }
 

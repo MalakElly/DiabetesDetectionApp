@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "RiskService.API.Controllers.RiskController",
+    "Method": "GetRisk",
+    "RelativePath": "api/Risk/{patientId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "patientId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

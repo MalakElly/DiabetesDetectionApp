@@ -1,21 +1,22 @@
-﻿using FrontEnd.Services;
-using FrontEnd.Models;
+﻿using fe=FrontEnd.Services;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using PatientService.Core.Entities;
 
 namespace FrontEnd.Pages.Patients
 {
     public class EditModel : PageModel
     {
-        private readonly PatientService _service;
+        private readonly FrontEnd.Services.PatientService _service;
 
-        public EditModel(PatientService service)
+        public EditModel(fe.PatientService service)
         {
             _service = service;
         }
 
         [BindProperty]
-        public PatientDto Patient { get; set; }
+        public Patient Patient { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int id)
         {

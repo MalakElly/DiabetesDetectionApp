@@ -1,0 +1,126 @@
+version: "3.9"
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    restart: always
+    environment:
+      SA_PASSWORD: "Password123!"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    networks:
+      - diabetes-net
+
+
+  patientservice:
+    build:
+      context: .
+      dockerfile: PatientService.API/Dockerfile  
+    container_name: patientservice
+    restart: always
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver,1433;Database=PatientDb;User Id=sa;Password=Password123!;TrustServerCertificate=True
+    ports:
+      - "7180:80"     
+    networks:
+      - diabetes-net
+
+
+  notesservice:
+    build:
+      context: .
+      dockerfile: NotesService.API/Dockerfile
+    container_name: notesservice
+    restart: always
+    depends_on:
+      - mongo
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - MongoDatabaseSettings__ConnectionString=mongodb://mongo:27017
+      - MongoDatabaseSettings__DatabaseName=NotesDB
+      - MongoDatabaseSettings__NotesCollectionName=Notes
+    ports:
+      - "5199:80"
+    networks:
+      - diabetes-net
+
+
+  riskservice:
+    build:
+      context: .
+      dockerfile: RiskService.API/Dockerfile
+    container_name: riskservice
+    restart: always
+    depends_on:
+      - patientservice
+      - notesservice
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ApiGateway__BaseUrl=http://apigateway
+    ports:
+      - "5029:80"
+    networks:
+      - diabetes-net
+
+
+  apigateway:
+    build:
+      context: .
+      dockerfile: ApiGateway/Dockerfile
+    container_name: apigateway
+    restart: always
+    depends_on:
+      - patientservice
+      - notesservice
+      - riskservice
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "7162:80"
+    networks:
+      - diabetes-net
+
+
+  frontend:
+    build:
+      context: .
+      dockerfile: FrontEnd/Dockerfile
+    container_name: frontend
+    restart: always
+    depends_on:
+      - apigateway
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ApiGateway__BaseUrl=http://apigateway
+    ports:
+      - "3000:80"
+    networks:
+      - diabetes-net
+
+
+  mongo:
+    image: mongo:6.0
+    container_name: mongodb
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - diabetes-net
+
+
+networks:
+  diabetes-net:
+    driver: bridge
+
+volumes:
+  sql_data:
+  mongo_data:

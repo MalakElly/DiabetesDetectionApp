@@ -7,7 +7,23 @@
         "Action": "Start"
       },
       {
-        "Path": "..\\PatientService.API\\PatientService.API.csproj",
+        "Path": "FrontEnd\\FrontEnd.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "PatientService.API\\PatientService.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AuthService\\AuthService.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "NotesService.API\\NotesService.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "RiskService.API\\RiskService.API.csproj",
         "Action": "Start"
       }
     ]

@@ -1,0 +1,50 @@
+﻿@page "{id:int}"
+@model FrontEnd.Pages.Patients.DeleteModel
+
+@{
+    ViewData["Title"] = "Supprimer un patient";
+}
+
+<div class="container mt-5" style="max-width: 600px;">
+    <div class="card shadow-sm border-danger">
+        <div class="card-header bg-danger text-white text-center">
+            <h3 class="mb-0">Supprimer un patient</h3>
+        </div>
+
+        <div class="card-body">
+            <h5 class="text-center text-danger">
+                Êtes-vous sûr(e) de vouloir supprimer ce patient ?
+            </h5>
+
+            <hr />
+
+            <dl class="row">
+                <dt class="col-sm-4 fw-bold">Prénom</dt>
+                <dd class="col-sm-8">@Model.Patient.FirstName</dd>
+
+                <dt class="col-sm-4 fw-bold">Nom</dt>
+                <dd class="col-sm-8">@Model.Patient.LastName</dd>
+
+                <dt class="col-sm-4 fw-bold">Date de naissance</dt>
+                <dd class="col-sm-8">@Model.Patient.DateOfBirth.ToShortDateString()</dd>
+
+                <dt class="col-sm-4 fw-bold">Genre</dt>
+                <dd class="col-sm-8">@Model.Patient.Gender</dd>
+
+                <dt class="col-sm-4 fw-bold">Adresse</dt>
+                <dd class="col-sm-8">@Model.Patient.Address</dd>
+
+                <dt class="col-sm-4 fw-bold">Téléphone</dt>
+                <dd class="col-sm-8">@Model.Patient.PhoneNumber</dd>
+            </dl>
+
+            <form method="post" class="text-center mt-4">
+                <input type="hidden" asp-for="Patient.Id" />
+                <button type="submit" class="btn btn-danger px-4">
+                    <i class="bi bi-trash"></i> Supprimer
+                </button>
+                <a asp-page="/Patients/Index" class="btn btn-secondary ms-2">Annuler</a>
+            </form>
+        </div>
+    </div>
+</div>

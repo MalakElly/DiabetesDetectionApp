@@ -52,6 +52,7 @@ SQL Server	Base de données principale
 Le projet a été développé dans une logique de Green Code,  de sobriété numérique et de réduction de l’empreinte environnementale du logiciel.
 
 => Objectif	et application concrète:
+
 Réduction des traitements inutiles :	Utilisation du AsNoTracking() dans EF Core pour les lectures simples.
 Minimisation des échanges réseau	: Les appels FrontEnd → Gateway → Services sont ciblés et optimisés.
 Optimisation mémoire:	Utilisation de IEnumerable et suppression des objets non utilisés (dispose pattern).
